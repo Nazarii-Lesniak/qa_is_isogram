@@ -19,6 +19,10 @@ describe('isIsogram', () => {
     expect(isIsogram('Adam')).toBe(false);
   });
 
+  it(`returns false if string contains consecutive duplicate letters`, () => {
+    expect(isIsogram('Oops')).toBe(false);
+  });
+
   it(`returns true if the string is empty`, () => {
     expect(isIsogram('')).toBe(true);
   });
